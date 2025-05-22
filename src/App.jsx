@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 export default function App() {
-  const [count1, setCount1] = useState(0);
-  const [count2, setCount2] = useState(0);
-  const [data, setData] = useState("");
+  // const [count1, setCount1] = useState(0);
+  // const [count2, setCount2] = useState(0);
+  // const [data, setData] = useState('');
 
   // useEffect(() => {
   //   console.log("Executa na primeira redenrização e em todas as re-renderizações..");
@@ -27,26 +27,25 @@ export default function App() {
   //   }
   // }, [count1]);
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/alexgeracaotech")
-      .then(response => response.json())
-      .then(data => setData(data))
+  // useEffect(() => {
+  //   fetch("https://api.github.com/users/alexgeracaotech")
+  //     .then(response => response.json())
+  //     .then(data => setData(data))
 
-    console.log(data);
-  }, []);
-
-
+  //   }, []);
+    
+  // console.log(data);
 
   return (
     <>
-      <div >
+      {/* <div >
         <span style={{ display: 'block' }}>{count1}</span>
         <button onClick={() => setCount1(count1 + 1)}>counter1</button>
       </div>
       <div >
         <span style={{ display: 'block' }}>{count2}</span>
         <button onClick={() => setCount2(count2 + 1)}>counter2</button>
-      </div>
+      </div> */}
     </>
 
   );
